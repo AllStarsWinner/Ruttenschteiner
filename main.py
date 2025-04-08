@@ -35,8 +35,7 @@ async def cmd_text1(message: Message):
 @dp.message(F.text == 'Ваша філія в ЄС')
 async def cmd_text1(message: Message):
     await message.answer('Будь ласка, почекайте поки файл грузиться... ')
-    await bot.send_document(chat_id=message.chat.id,
-                            document=FSInputFile('rutikDOCS/Prices_Sales_Distributor_2025.docx'))
+    await bot.send_document(chat_id=message.chat.id,document=FSInputFile('rutikDOCS/filia.docx'))
 
 
 @dp.message(F.text == 'Ваша компанія в ЄС')
