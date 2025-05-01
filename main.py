@@ -385,7 +385,7 @@ VKB IBAN: AT89 1860 0000 1650 9309 BIC :VKBLAT2L
 
 
 
-""")
+""",parse_mode=ParseMode.HTML)
 
 
 @dp.message(F.text == 'Про нас')
