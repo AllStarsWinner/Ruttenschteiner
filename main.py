@@ -24,7 +24,7 @@ async def cmd_start(message: Message):
 @dp.message(F.text == 'Наші послуги')
 async def cmd_text1(message: Message):
     await message.answer('Будь ласка, почекайте поки файл грузиться... ')
-    await bot.send_document(chat_id=message.chat.id, document=FSInputFile('rutikDOCS/Pricelist_Branch.docx'))
+    await bot.send_document(chat_id=message.chat.id, document=FSInputFile('rutikDOCS/general.docx'))
 
 
 @dp.message(F.text == '')
@@ -42,13 +42,13 @@ async def cmd_text1(message: Message):
 async def cmd_text1(message: Message):
     await message.answer('Будь ласка, почекайте поки файл грузиться... ')
     await bot.send_document(chat_id=message.chat.id,
-                            document=FSInputFile('rutikDOCS/Pricelist_general_services_Q1-2025.docx'))
+                            document=FSInputFile('rutikDOCS/Company.docx'))
 
 
 @dp.message(F.text == 'Ваш товар в ЄС')
 async def cmd_text1(message: Message):
     await message.answer('Будь ласка, почекайте поки файл грузиться... ')
-    await bot.send_document(chat_id=message.chat.id, document=FSInputFile('rutikDOCS/Pricelist_GMBH_Q1-2025.docx'))
+    await bot.send_document(chat_id=message.chat.id, document=FSInputFile('rutikDOCS/tovar.docx'))
 
 
 @dp.message(F.text == 'Про нас')
